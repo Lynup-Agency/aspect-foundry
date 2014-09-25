@@ -1,0 +1,294 @@
+#wrap-header {
+     left: 0;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height: 76px;
+     z-index: 1023;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+     -webkit-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+     -moz-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ #wrap-header #main-header {
+     position: relative;
+     width: 1024px;
+     margin: 0 auto;
+     text-align: left;
+}
+ #wrap-header #main-header #header-logo {
+     position: absolute;
+     direction: ltr;
+     text-indent: -9999px;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ #wrap-header #main-header .right {
+     position: absolute;
+     top: 0;
+     right: 0;
+     display: inline-block;
+     zoom: 1;
+     *display: inline;
+}
+ #wrap-header #main-header .right .main-navigation {
+     margin-left: 0;
+     float: left;
+}
+ #wrap-header #main-header .right .main-navigation li:first-child:before {
+     border: none;
+}
+ #wrap-header #main-header .right .main-navigation li:last-child a {
+     padding-right: 10px;
+}
+ #wrap-header #main-header .dropdown-menu li a.nav-sprite-container {
+     padding-right: 0px!important;
+}
+ #wrap-header #main-header .main-navigation {
+     list-style: none;
+     margin: 0 0 0 190px;
+     font-size: 0;
+     display: inline-block;
+     zoom: 1;
+     *display: inline;
+}
+ #wrap-header #main-header .main-navigation li {
+     display: inline-block;
+     zoom: 1;
+     *display: inline;
+     line-height: 18px;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ #wrap-header #main-header .main-navigation li .hidden-hover {
+     height: 156px;
+     width: 100%;
+     margin: -115px;
+     left: 116px;
+     position: absolute;
+     opacity: 0;
+     z-index: 1000000;
+}
+ #wrap-header #main-header .main-navigation li a {
+     display: inline-block;
+     padding: 27px 16px 27px;
+     vertical-align: -1px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-weight: 300;
+     font-size: 16px;
+     border-top: 3px solid transparent;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ #wrap-header #main-header .main-navigation img {
+     margin: -10px 0 0 !important;
+}
+ #wrap-header #main-header .main-navigation li a:hover {
+     text-decoration: none;
+}
+ #wrap-header #main-header .main-navigation li a.activeMenu {
+     text-decoration: none;
+     -webkit-transition: none;
+     -moz-transition: none;
+     transition: none;
+}
+ #wrap-header #main-header .main-navigation li.selected:before {
+     border: none;
+}
+ #wrap-header #main-header .main-navigation li.selected+li {
+     padding-left: 2px;
+}
+ #wrap-header #main-header .main-navigation li.selected+li:before {
+     border: none;
+}
+ #wrap-header #main-header .dropdown:hover .dropdown-menu, #wrap-header #main-header .hidden-hover:hover .dropdown-menu, #wrap-header #main-header #header-logo-hidden-hover:hover .dropdown-menu {
+     display: block;
+}
+ #wrap-header #main-header #header-logo-hidden-hover {
+     height: 36px;
+     position: absolute;
+     width: 190px;
+     left: -16px;
+     z-index: 1000000;
+     top: 17px;
+}
+ #wrap-header #main-header #header-logo-wrap {
+     display: block;
+     position: absolute;
+}
+ #wrap-header #main-header #header-logo-wrap a:focus {
+     outline: none;
+}
+ #wrap-header #main-header .dropdown-menu {
+     width: 180px;
+     padding: 7px 3px 7px 7px;
+     border-radius: 6px;
+     left: auto;
+     -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+     box-sizing: content-box;
+}
+ #wrap-header #main-header .dropdown-menu#about {
+     margin: 13px -62px;
+}
+ #wrap-header #main-header .dropdown-menu#downloads {
+     margin: 13px -30px;
+}
+ #wrap-header #main-header .dropdown-menu#homeLogo {
+     margin: 13px -30px;
+}
+ #wrap-header #main-header .dropdown-menu::after, #wrap-header #main-header .dropdown-menu::before {
+     position: absolute;
+     opacity: .9;
+     display: inline-block;
+     content: '';
+     left: 100px;
+}
+ #wrap-header #main-header .dropdown-menu:before {
+     content: "";
+     position: absolute;
+     top: -24px;
+     left: 50%;
+     margin-left: -13px;
+     border-width: 13px;
+     border-style: solid;
+}
+ #wrap-header #main-header .dropdown-menu:after {
+     content: "";
+     position: absolute;
+     top: -24px;
+     left: 50%;
+     margin-left: -12px;
+     border-width: 12px;
+     border-style: solid;
+}
+ #wrap-header #main-header .dropdown-menu li {
+     display: inline;
+}
+ #wrap-header #main-header .dropdown-menu li a {
+     font-size: 16px;
+     font-weight: 100;
+     border-top: none!important;
+     width: 95%;
+     height: 20px;
+     padding: 10px 5px;
+     text-transform: none;
+}
+ #wrap-header #main-header .dropdown-menu li a:hover {
+     text-decoration: none;
+     border-radius: 3px;
+     border-top: none!important;
+     box-shadow: inset 0px 1px 1px #4c4c4c;
+}
+ #wrap-header #main-header .dropdown-menu a.nav-sprite-container {
+     padding-top: 10px;
+     -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+     box-sizing: content-box;
+}
+ .icon-sprite {
+     margin: -10px 12px;
+     background: none;
+     width: 32px;
+     height: 32px;
+     font-size: 20px;
+     line-height: 15px;
+}
+ .icon-menu-sprite {
+     margin: 0 10px 0 10px;
+     background: none;
+     font-size: 20px;
+     float: left;
+     clear: both;
+}
+ #wrap-header .ie8 #caret {
+     width: 150px;
+}
+ .activeNav {
+     font-weight: bold;
+}
+/*SubNav*/
+ .subNav {
+     position: absolute;
+     margin-left: -200px;
+     width: 200px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+}
+ .subNav ul {
+     display: block;
+     margin: 0;
+     padding: 0;
+}
+ .subNav li {
+     list-style: none;
+     line-height: 50px;
+}
+ .subNav li a {
+     padding: 15px 0 15px 5px;
+     font-size: 12px;
+     line-height: 22px;
+     display: block;
+}
+ .subNav li a:hover {
+     text-decoration: none;
+}
+ .subNav li a.activeMenu {
+     text-decoration: none;
+}
+ .sticky-wrapper {
+     position: absolute;
+}
+ .subNav span.subNavtitle {
+     font-size: 16px;
+     margin: 0 auto;
+     text-align: center;
+     width: 100%;
+     display: block;
+     font-weight: 700;
+     letter-spacing: -1px;
+     text-transform: uppercase;
+}
+/* Transitions and class for reduced height */
+ #wrap-header.wrap-header-shrink {
+     height: 57px;
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li a {
+     font-size: 16px;
+     line-height: 0px;
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li {
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li a:hover {
+    /*border-top: 3px solid #EEF4FA;
+    */
+     -webkit-transition: none;
+     -moz-transition: none;
+     transition: none;
+}
+ #wrap-header.wrap-header-shrink #main-header{
+     margin: 0 auto;
+}
+ #wrap-header.wrap-header-shrink #main-header, #wrap-header.wrap-header-shrink #main-header #header-logo, #wrap-header.wrap-header-shrink #main-header .main-navigation li, #wrap-header.wrap-header-shrink #main-header .main-navigation li a {
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li a:hover {
+     text-decoration: none;
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li a.activeMenu {
+     text-decoration: none;
+     font-weight: 700;
+     -webkit-transition: none;
+     -moz-transition: none;
+     transition: none;
+}

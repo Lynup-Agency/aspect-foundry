@@ -1,0 +1,92 @@
+#slides {
+     display: none 
+}
+ #slides .slidesjs-navigation {
+     position: absolute;
+     top: 360px;
+     z-index:1022;
+}
+ #slides .slidesjs-previous {
+     float: left;
+     position: absolute;
+     left: 20px;
+     background:url(../img/large_left.png) no-Repeat 0 0;
+     opacity: 0.3;
+     width:40px;
+     height:40px;
+}
+ #slides .slidesjs-next {
+     float: left;
+     position: absolute;
+     right: 20px;
+     background:url(../img/large_right.png) no-Repeat 0 0;
+     opacity: 0.3;
+     width:40px;
+     height:40px;
+}
+ #slides .slidesjs-next:hover, #slides .slidesjs-previous:hover {
+     background-position:bottom left;
+     opacity: 1;
+}
+ .slidesjs-pagination {
+     display: inline-block;
+     margin: 0 auto;
+     list-style: none;
+     position: absolute;
+     bottom: 20px;
+     text-align: right;
+     width: 100%;
+     z-index: 1022;
+     padding-right: 20px;
+}
+ .slidesjs-pagination li {
+     display: inline-block;
+     margin: 0 1px;
+}
+ .slidesjs-pagination li a {
+     display: block;
+     width: 13px;
+     height: 0;
+     padding-top: 13px;
+     background-image: url(../img/pagination.png);
+     background-position: 0 0;
+     float: left;
+     overflow: hidden;
+}
+ .slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active {
+     background-position: 0 -13px 
+}
+ .slidesjs-pagination li a:hover {
+     background-position: 0 -26px 
+}
+ #slides a:link, #slides a:visited {
+     color: #333 
+}
+ #slides a:hover, #slides a:active {
+     color: #9e2020 
+}
+
+/*Retina images served up here*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+.slidesjs-pagination li a {
+      background-image: url(../img/pagination@2x.png);
+	  background-size: 100%;
+}
+
+#slides .slidesjs-previous {
+		background:url(../img/large_left@2x.png) no-Repeat 0 0;
+		background-size: 100%;
+}
+
+#slides .slidesjs-next {
+		background:url(../img/large_right@2x.png) no-Repeat 0 0;
+		background-size: 100%;
+}
+}

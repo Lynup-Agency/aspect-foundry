@@ -1,0 +1,924 @@
+/* ========================================== */
+/*
+DOCUMENT INFORMATION
+	- Document: Appr - app showcase theme Single Page Main Style
+	- Version:  1.0
+	- Created for: Themeforest
+	- Author: pedrodonkey
+
+/* ========================================== */
+/*
+COLORS - change from custom.css
+	- default body text   		#3E4754
+	- header nav bar		   		#FFFFFF
+	- header nav bar minimized	#33789C
+	- header nav bar highlight	#FFFFFF + #EEF4FA
+	- sub nav header		   		#CCCCCC
+	
+	- links and highlight 	#3E4754
+
+
+ FONTS - Change from index.html
+	Montserrat
+	Open Sans
+*/	
+/* ========================================== */
+
+
+/* ========================================== */
+/* ===================KEY==================== */
+/* ========================================== */
+/*
+
+	1. = GLOBAL STYLES
+	2. = CONTAINER STYLES
+	3. = MAIN NAVIGATION STYLES
+	4. = HOME BLOCK STYLES
+	5. = MEDIA LOGOS
+	6. = FOOTER STYLES
+	7. = NOTIFICATION BLOCK STYLES
+	8. = CONTACT/REGISTER BLOCK STYLES
+	9. = HOME SLIDER STYLES
+	10. = MODAL WINDOWS STYLES
+	11. = SOCIAL BLOCK STYLES
+	12. = SHOWCASE GALLERIES BLOCK STYLES
+	13. = HOME INTRO STYLES
+	14. = QUOTE/TESTIMONIAL ROTATOR STYLES
+	15. = PAGE PRE LOADER STYLES
+
+*/	
+/* ========================================== */
+/* ========================================== */
+
+
+/* === GLOBAL STYLES === */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+}
+ body {
+     background-image: url(../img/bodyBG.png);
+     background-repeat: repeat;
+     background-attachment:fixed;
+     font: 16px/26px 'Open Sans', HelveticaNeue , Helvetica Neue, Helvetica, Arial, sans-serif;
+     color: #3E4754;
+     -webkit-font-smoothing: antialiased;
+    /* Fix for webkit rendering */
+     -webkit-text-size-adjust: 100%;
+     margin: 0;
+     overflow:hidden;
+    /*remove this if you are not using the preloader*/
+}
+ h1, h2, h3, h4 {
+     margin: 1em 0;
+}
+ h1 {
+     font-size: 36px;
+}
+ h2 {
+}
+ h3 {
+     font-size: 28px;
+}
+ a {
+     color: #000000;
+     text-decoration: none;
+}
+ a:focus, a:active {
+     outline: none!important;
+}
+ hr {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     border-color: #CCCCCC -moz-use-text-color -moz-use-text-color;
+     border-right: 0 none;
+     border-style: dotted none none;
+     border-width: 1px 0 0;
+     clear: both;
+     color: #FFFFFF;
+     margin-top: 35px;
+     width: 620px;
+}
+ input {
+     margin: 18px 1px 0 20px;
+     -webkit-box-shadow: 0px 0px 0px #FFFFFF;
+}
+ .justify {
+     text-align: justify;
+}
+ *, *:after, *:before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+/* === CONTAINER STYLES === */
+ #wrap {
+     margin: 160px auto 0;
+     text-align: left;
+     width: 1400px;
+}
+ #head {
+     margin: 0 auto;
+     text-align: center;
+}
+ #content {
+     font: 16px/26px 'Open Sans', HelveticaNeue , Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+ #home-content {
+     margin-top: -160px;
+}
+ #sliderWrapper {
+     width: 1200px;
+}
+ #wrapper {
+     font-size: 0.8em;
+     line-height: 1.6em;
+     margin: 0 auto 40px;
+     width: 1200px;
+}
+ #wrapper p {
+     margin-bottom: 1em;
+}
+ #wrapper.page {
+     font-size: 0.9em;
+     line-height: 1.8em;
+     width: 1200px;
+}
+ #wrapper.page h2 {
+     padding: 0;
+     line-height: 1.1em;
+     margin: 10px 0 0;
+     font-weight: 600;
+     letter-spacing: -3px;
+}
+ .homeshadow {
+     background-color: #FFFFFF;
+     border-bottom: 1px solid #DADADA;
+     box-shadow: 0 1px 2px #CCCCCC;
+}
+/* === MAIN NAVIGATION STYLES === */
+ #nav {
+     float: right;
+     padding: 35px 0 0;
+     width: auto;
+}
+ #nav ul {
+     float: right;
+     height: 50px;
+}
+ #nav li {
+     display: inline;
+     float: left;
+     text-align: center;
+     width: auto;
+}
+ #nav li a {
+     border-bottom: medium none;
+     color: #333333;
+     display: block;
+     font-size: 20px;
+     font-weight: 400;
+     padding: 15px;
+}
+ a:link {
+     font-weight: normal;
+     text-decoration: none;
+}
+ a.btn.btn-info {
+     color: #fff!important;
+     font-weight: normal;
+     text-decoration: none;
+}
+ a:visited {
+     font-weight: normal;
+     text-decoration: none;
+}
+ a:hover {
+     font-weight: normal;
+     text-decoration: underline;
+}
+ a:active {
+     font-weight: normal;
+     text-decoration: none;
+}
+/* === HOME BLOCK STYLES === */
+ #home-press {
+     text-align: center;
+     border-bottom: 1px solid #dadada;
+}
+ .home-block {
+     border-bottom: 1px solid #DADADA;
+     padding: 60px 80px 60px;
+     text-align: center;
+     display: block;
+}
+ .home-block.alternate {
+     background-color: #fafafa;
+}
+ .no-padding {
+     padding: 60px 0;
+}
+ .no-padding-left {
+     padding: 0px;
+}
+ .no-padding-right {
+     padding: 0px;
+}
+ .no-padding-bottom {
+     padding: 0px;
+}
+ .no-padding-left li, .no-padding-right li, .no-padding-bottom li {
+     text-align: center;
+     list-style: none;
+     padding:0;
+     margin:0;
+}
+ img.no-padding-left {
+     margin-bottom: -40px;
+     opacity: 0;
+     transition: opacity .3s ease-in;
+}
+ img.no-padding-right {
+     margin-bottom: -40px;
+     opacity: 0;
+     transition: opacity .3s ease-in;
+}
+ img.no-padding-bottom {
+     margin-bottom: -40px;
+     opacity: 0;
+     transition: opacity .3s ease-in;
+}
+ .minHeightImg {
+     min-height: 500px;
+}
+ .home-block ul {
+     margin: 0px!important 
+}
+ .home-block h1 {
+     margin: 0 0 30px 0 !important;
+}
+ .home-block h2 {
+     font-size: 32px;
+     margin: 0 0 15px 0 !important;
+}
+ .home-block .intro {
+     padding: 145px 60px 0 0!important;
+     font-size: 15px;
+     line-height: 28px;
+     font-weight: 400;
+     text-align: center;
+}
+ .home-block .intro_opp {
+     padding: 145px 0 30px 60px!important;
+     font-size: 15px;
+     line-height: 28px;
+     font-weight: 400;
+     text-align: center;
+}
+ .home-block h4 {
+     font-size: 26px;
+     font-weight: 700;
+     letter-spacing: -0.03em;
+     margin-bottom: 35px;
+     text-align: left;
+     line-height: 30px;
+}
+ .intro, .intro_opp {
+     padding: 0 20px 0 20px!important;
+     font-size: 1.1em;
+     line-height: 1.5em;
+     font-weight:lighter;
+}
+ .home-block h3.introParagraph, h3.introParagraph {
+     margin: 10px 0 50px!important;
+     font-size: 1.3em;
+     line-height: 1.2em;
+     font-weight:lighter;
+     letter-spacing: -1px;
+}
+ #home-contact .introParagraph {
+     margin: 10px 0 30px!important;
+}
+ .videobox {
+     position: relative;
+     width: 125px;
+     height: 75px;
+     margin: 0 auto;
+}
+ .videobox span {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     z-index: 1;
+     background: url(../img/play.png) no-repeat center center;
+}
+ .videobox.pull-left {
+     margin: 0 10px 10px 0;
+}
+/* === MEDIA LOGOS === */
+ .media_list {
+     width: auto;
+     margin: 12px auto!important;
+     overflow: hidden;
+     text-align: center;
+}
+ .media_list li {
+     display: inline-block;
+     margin: 0;
+}
+ .media_list a {
+     display: block;
+     height: 56px;
+     background-image: url(../img/media_logos-blank.png);
+     background-repeat: no-repeat;
+     background-size: 1206px auto;
+     text-indent: -10000px;
+}
+ .media-computerworld {
+     width: 197px;
+     background-position: 0 0;
+}
+ .media-computerworld:hover, .media-computerworld:focus {
+     background-position: 0 -59px;
+}
+ .media-venturebeat {
+     width: 269px;
+     background-position: -205px 0;
+}
+ .media-venturebeat:hover, .media-venturebeat:focus {
+     background-position: -205px -59px;
+}
+ .media-engadget {
+     width: 213px;
+     background-position: -476px 0;
+}
+ .media-engadget:hover, .media-engadget:focus {
+     background-position: -476px -59px;
+}
+ .media-macworld {
+     width: 152px;
+     background-position: -690px 0;
+}
+ .media-macworld:hover, .media-macworld:focus {
+     background-position: -690px -59px;
+}
+ .media-cnet {
+     width: 133px;
+     background-position: -852px 0;
+}
+ .media-cnet:hover, .media-cnet:focus {
+     background-position: -852px -59px;
+}
+ .media-techcrunch {
+     width: 225px;
+     background-position: -983px 0;
+}
+ .media-techcrunch:hover, .media-techcrunch:focus {
+     background-position: -983px -59px;
+}
+/* === FOOTER STYLES === */
+ #footer {
+     clear: left;
+     text-align: left;
+     font-size: 0.9em;
+     margin: 0 auto;
+     padding: 0 0 85px;
+     height: 70px;
+}
+ span#footer-title {
+     float: left;
+     padding: 20px;
+     width: 45%;
+}
+ #footer h2 {
+     font-size: 24px;
+     font-weight: normal;
+}
+ #copyright, #footerNav {
+     color: #999999;
+     font-size: 1em;
+     line-height: 1.4em;
+     text-align: center;
+     margin-bottom: 10px;
+}
+ #copyright ul {
+     margin-bottom: 5px;
+}
+ #copyright li {
+     display: inline;
+     border-right: 1px solid #999999;
+     padding-right: 3px;
+     padding-left: 5px;
+}
+ #copyright li:last-child,
+ #copyright li:first-child {
+     border-right: none;
+	 padding-right: 0px;
+}
+ div#copyright a.copyright:link, div#footerNav a:link {
+     color: #696969;
+     font-weight: normal;
+     text-decoration: none;
+}
+ div#copyright a.copyright:visited, div#footerNav a:visited {
+     color: #696969;
+     font-weight: normal;
+     text-decoration: none;
+}
+ div#copyright a.copyright:hover, div#footerNav a:hover {
+     color: #888888;
+     font-weight: normal;
+     text-decoration: none;
+}
+ div#copyright a.copyright:active, div#footerNav a:active {
+     color:#696969;
+     font-weight: normal;
+     text-decoration: none;
+}
+/* === NOTIFICATION BLOCK STYLES === */
+ #formMessage {
+     background: #ffffff;
+}
+ .userMessage {
+    color: #333333;
+    text-align:center;
+     margin: 0 8px;
+    padding: 2px;
+     font-size:15px;
+     background: none;
+}
+/* === CONTACT/REGISTER BLOCK STYLES === */
+ .contact-info-message, .contact-info-error, .contact-info-email-error {
+     display:none;
+     font-size: 15px;
+}
+ .contact-info-message .icon-sprite {
+     color: #468847;
+     text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+ .contact-form input[type="text"], .contact-form input[type="password"], .contact-form input[type="email"] {
+     background-color: #F3F4F6;
+     border: 1px solid #BCC3C9;
+     color: #666;
+     height: 36px;
+     line-height: 36px;
+     padding: 0 0 0 10px;
+     font-size: 14px;
+}
+ .contact-form a.btn-full {
+     margin: 10px;
+     height: 40px;
+     display: inline-block;
+     cursor: pointer;
+}
+ .contact-form a.btn-half {
+     margin: 10px;
+     height: 40px;
+     display: inline-block;
+     cursor: pointer;
+}
+ .contact-form input#first_name, .contact-form input#last_name {
+     margin: 10px;
+     width: 155px;
+}
+ .contact-form label {
+     cursor: pointer;
+}
+ .contact-form fieldset {
+     margin:20px;
+     padding:10px;
+     text-align: left;
+}
+ .contact-form fieldset legend {
+}
+ .contact-form fieldset p {
+     margin:5px 0;
+}
+ div.error {
+     color: #cc0000;
+}
+ span#error_msg {
+     color: #cc0000;
+     text-align: left;
+     line-height: 1.5em;
+}
+ .contact-info {
+     margin:20px 0 20px 10px;
+     font-size: 1.1em;
+     font-weight:lighter;
+}
+ .contact-info .clearfix {
+     height: 15px;
+}
+ .contact-info span {
+     display: block;
+}
+ .contact-info span strong.highlight {
+     color: #33789C;
+     font-weight: bold;
+}
+ .contact-info span.address {
+     color: #C6C6C6;
+}
+ .contact-info h3 {
+     font-size: 20px;
+     font-weight: normal;
+     line-height: 20px;
+     margin:0;
+}
+ .contact-info h4 {
+     font-size: 14px;
+     font-weight: lighter;
+     line-height: 14px;
+     margin:5px 0;
+}
+ .contact-info.text-left p {
+     font-size: 24.5px;
+     line-height: 24px;
+     margin: 0 0 10px !important;
+     padding: 0;
+}
+ .home-contact input {
+     background-color: #F3F4F6;
+     margin: 3px 3px 3px 0 !important;
+     padding: 0 0 0 10px;
+     font-size: 14px;
+     height: 40px;
+     line-height: 14px;
+     color: #666666;
+     border-radius: 0!important;
+}
+ .home-contact textarea {
+     background-color: #F3F4F6;
+     margin: 3px 3px 3px 0 !important;
+     padding: 5px 0 0 10px;
+     font-size: 14px;
+     line-height: 24px;
+     height: 100px;
+     color: #666666;
+     resize: vertical;
+     border-radius: 0!important;
+     border: 1px solid #BCC3C9!important;
+}
+ .home-contact input[type="text"], .home-contact input[type="email"] {
+     border: 1px solid #BCC3C9;
+}
+ .home-contact input.short {
+     border: 1px solid #BCC3C9;
+     width: 44.2%!important;
+}
+ .home-contact textarea{
+     border: 1px solid #BCC3C9;
+     width: 90%!important;
+}
+ .home-contact input.terms, span.hint {
+     margin: 3px 10px 3px 0 !important;
+     font-size: 14px;
+     color: #777;
+     vertical-align: middle;
+     height: 30px;
+}
+ .home-contact input.terms, span.hint input {
+     background: transparent;
+}
+ .home-contact input#slide-submit {
+     margin: 3px 10px 3px 0 !important;
+     font-size: 14px;
+     color: #777;
+     vertical-align: middle;
+     margin: 0 !important;
+     padding: 0 !important;
+     background-color: transparent;
+}
+ a.home-contact {
+     cursor: pointer;
+}
+ button.contact-submit {
+     height: 36px;
+    /*margin-left: -8px!important;
+    */
+     border-radius: 0;
+}
+/* Form Validation */
+ .contact-form .error {
+    border: 1px solid #CE0000!important;
+}
+
+.help-block {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
+/* === HOME SLIDER STYLES === */
+ .bannercontainer {
+     position: relative;
+}
+/* === MODAL WINDOWS STYLES === */
+ .modal-popup-clients {
+     max-width:800px;
+     margin: 20px auto;
+     background: #FFF;
+     padding: 0;
+     line-height: 0;
+}
+ .modal-popup-clients h2 {
+     font-size: 28px;
+     font-weight: normal;
+}
+ .ajcol {
+     width: 50%;
+     float:left;
+     line-height: 1.231;
+}
+ .ajcol img {
+     width: 100%;
+     height: auto;
+}
+ .ajaxContainer {
+     padding: 1em;
+}
+/** * Fade-move animation for client gallery */
+/* at start */
+ .my-mfp-slide-bottom .zoom-anim-dialog {
+     opacity: 0;
+     -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+     -o-transition: all 0.2s ease-out;
+     transition: all 0.2s ease-out;
+     -webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 0 );
+     -moz-transform: translateY(-20px) perspective( 600px ) rotateX( 0 );
+     -ms-transform: translateY(-20px) perspective( 600px ) rotateX( 0 );
+     -o-transform: translateY(-20px) perspective( 600px ) rotateX( 0 );
+     transform: translateY(-20px) perspective( 600px ) rotateX( 0 );
+}
+/* animate in */
+ .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+     opacity: 1;
+     -webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+     -moz-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+     -ms-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+     -o-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+     transform: translateY(0) perspective( 600px ) rotateX( 0 );
+}
+/* animate out */
+ .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+     opacity: 0;
+     -webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 0 );
+     -moz-transform: translateY(-10px) perspective( 600px ) rotateX( 0 );
+     -ms-transform: translateY(-10px) perspective( 600px ) rotateX( 0 );
+     -o-transform: translateY(-10px) perspective( 600px ) rotateX( 0 );
+     transform: translateY(-10px) perspective( 600px ) rotateX( 0 );
+}
+/* Dark overlay, start state */
+ .my-mfp-slide-bottom.mfp-bg {
+     opacity: 0;
+     -webkit-transition: opacity 0.3s ease-out;
+     -moz-transition: opacity 0.3s ease-out;
+     -o-transition: opacity 0.3s ease-out;
+     transition: opacity 0.3s ease-out;
+}
+/* animate in */
+ .my-mfp-slide-bottom.mfp-ready.mfp-bg {
+     opacity: 0.8;
+}
+/* animate out */
+ .my-mfp-slide-bottom.mfp-removing.mfp-bg {
+     opacity: 0;
+}
+ @media all and (max-width:30.6em) {
+     .ajcol {
+         width: 100%;
+         float:none;
+    }
+}
+/* === SOCIAL BLOCK STYLES === */
+ .social ul {
+     margin: 0!important;
+}
+ .soc_list {
+     overflow:hidden;
+     position:relative;
+     padding-bottom:10px;
+     list-style: none;
+}
+ .soc_list li {
+     display: inline-block;
+     text-align: center;
+     margin-right:6px;
+     margin-bottom:10px;
+}
+ .soc_list li a {
+     position:relative;
+     display:block;
+     width:60px;
+     height:60px;
+     overflow:hidden;
+}
+ .soc_list li a img {
+     position:absolute;
+     left:0;
+     top:0;
+}
+ .soc_list li a:hover img {
+     top:-60px;
+}
+ span.social-list.facebook {
+     background: #3b5998;
+     color: #FFFFFF;
+}
+/* === SHOWCASE GALLERIES BLOCK STYLES === */
+ ul.showcaseThumbs {
+     padding-bottom: 0px;
+}
+ .showcaseThumbs li {
+     display: inline-block;
+     padding: 4px;
+     list-style: none;
+}
+ .showcaseThumbs li img {
+     display: block;
+     width: 100%;
+     height: auto;
+}
+ .gallery-item a:hover {
+     opacity: 0.85!important;
+     display: block;
+}
+/* === HOME INTRO STYLES === */
+ #home-intro {
+     margin: 0 0 0 0;
+     padding-top: 40px;
+     padding-bottom: 20px;
+}
+ #home-intro h1 {
+     font-size: 36px;
+     font-weight: 100;
+}
+ #home-intro h1 span {
+     font-weight: normal;
+     color: #33789C;
+}
+ #home-about{
+}
+ #home-about .row{
+}
+ #home-about p.first-about {
+     font-size: 15px;
+     text-align:justify;
+     font-weight:bold;
+}
+ #home-about h3 {
+     font-size: 22px;
+     margin: 0 0 5px;
+}
+ #home-services {
+}
+ #home-services ul {
+     margin:0px!important;
+}
+/* === QUOTE/TESTIMONIAL ROTATOR STYLES === */
+ .cbp-qtrotator {
+     position: relative;
+     margin: 1em auto 1em auto;
+     max-width: 800px;
+     width: 100%;
+}
+ .cbp-qtrotator .cbp-qtcontent {
+     position: absolute;
+     top: 0;
+     z-index: 0;
+     opacity: 0;
+     width: 100%;
+}
+ .no-js .cbp-qtrotator .cbp-qtcontent {
+     border-bottom: none;
+}
+ .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent, .no-js .cbp-qtrotator .cbp-qtcontent {
+     position: relative;
+     z-index: 100;
+     pointer-events: auto;
+     opacity: 1;
+}
+ .cbp-qtrotator .cbp-qtcontent:before, .cbp-qtrotator .cbp-qtcontent:after {
+     content: " ";
+     display: table;
+}
+ .cbp-qtrotator .cbp-qtcontent:after {
+     clear: both;
+}
+ .cbp-qtprogress {
+     position: absolute;
+     background: #47a3da;
+     height: 1px;
+     width: 0%;
+     top: 0;
+     z-index: 1000;
+}
+ .cbp-qtrotator blockquote {
+     margin: 0;
+     padding: 0;
+}
+ .cbp-qtrotator blockquote p {
+     font-size: 18px;
+     color: #BFBFBF;
+     font-weight: lighter;
+     font-style: italic;
+     font-family: 'Nunito', sans-serif;
+     margin: 35px 0 5px!important;
+}
+ .cbp-qtrotator blockquote footer {
+     font-size: 1.1em;
+     color: #c7c7c7;
+}
+ .cbp-qtrotator blockquote footer:before {
+     content: '― ';
+}
+ .cbp-qtrotator .cbp-qtcontent img {
+     float: right;
+     margin-left: 3em;
+}
+ .cbp-qtrotator blockquote {
+     border-left:none!important;
+}
+/* === PAGE PRE LOADER STYLES === */
+ #preloader {
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+     background-color:#fff;
+    /* change if the mask should have another color then white */
+     z-index:999999;
+    /* makes sure it stays on top */
+}
+.spinner {
+  margin: 10px 0 0 10px;
+  border: 2px solid #eeeeee;
+  font-size: 40px;
+  width: 1em;
+  height: 1em;
+  border-radius: .5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top-color: #377B9E;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Retina images served up here*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+.videobox span {
+  background: url(../img/play@2x.png) no-repeat center center;
+  background-size: 50%;
+}
+}

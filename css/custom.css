@@ -1,0 +1,170 @@
+/* ========================================== */
+/*
+
+Colors/background-colors/borders/opacity/logos set using this file.
+
+COLORS
+	- default body text   		#3E4754
+	- header nav bar		   		#FFFFFF
+	- header nav bar minimized	#33789C
+	- header nav bar highlight	#FFFFFF + #EEF4FA
+	- sub nav header		   		#CCCCCC
+	
+	- links and highlight 	#3E4754
+
+*/	
+/* ========================================== */
+	
+
+a:link {
+    color: #33789C;
+}
+a:visited {
+    color: #33789C;
+}
+a:hover {
+    color: #42ace3;
+}
+a:active {
+    color: #42ace3;
+}
+
+/*MAIN NAVIGATION*/
+ #wrap-header {
+     background-color: #FFFFFF;
+     opacity: 0.95;
+     border-bottom: 1px solid #FFFFFF;
+}
+ #wrap-header #main-header #header-logo {
+     background: transparent url(../img/logo.png) no-repeat 0 0;
+	 background-size: 100%;
+     width: 170px;
+     height: 50px;
+     margin-top: -25px;
+     top: 37px;
+     left: 0;
+}
+ #wrap-header #main-header .main-navigation li a {
+     color: #4c4c4c;
+}
+ #wrap-header #main-header .main-navigation li a:hover {
+     color: #33789c;
+}
+ #wrap-header #main-header .main-navigation li a.activeMenu {
+     color: #33789c;
+}
+ #wrap-header #main-header .main-navigation li.selected a {
+     color: #fff;
+}
+ #wrap-header #main-header .dropdown-menu {
+     opacity: 0.95;
+     background-color: #202020;
+     border: solid thin #202020;
+     border: solid thin #202020;
+}
+ #wrap-header #main-header .dropdown-menu:before {
+     border-color: transparent transparent #202020 transparent;
+}
+ #wrap-header #main-header .dropdown-menu:after {
+     border-color: transparent transparent #202020 transparent;
+}
+ #wrap-header #main-header .dropdown-menu li a {
+     color: #fff;
+}
+ #wrap-header #main-header .dropdown-menu li a:hover {
+     color: #33789C;
+     background-color: #303030;
+     background: #FFFFFF;
+}
+ #wrap-header #main-header .dropdown-menu li:before {
+     border: 0px solid #202020;
+     border-right: 0px solid #202020;
+}
+ #wrap-header #main-header .dropdown-menu li a:hover > .icon-sprite {
+     color: #33789C;
+}
+ #wrap-header #main-header dropdown-submenu:focus > a {
+     background-color: none!important;
+}
+ .icon-sprite {
+     color: #FFFFFF;
+}
+ .activeNav {
+     color: #ce0000;
+}
+/*--*/
+/*SUB NAVIGATION*/
+ .subNav {
+     background: #ffffff;
+}
+ .subNav li {
+     border-bottom: 1px solid #cecece;
+}
+ .subNav li a {
+     color: #4c4c4c;
+}
+ .subNav li a:hover {
+     background: #fafafa;
+     color: #4c4c4c;
+}
+ .subNav li a.activeMenu {
+     background: #fafafa;
+     border-left: 4px solid #33789C;
+     color: #4c4c4c;
+}
+ .subNav span.subNavtitle {
+     background: #CCCCCC;
+     color: #33789C;
+}
+/*--*/
+/* Transitions and class for reduced height */
+ #wrap-header.wrap-header-shrink {
+     background: #33789C;
+     opacity: 0.98;
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li a {
+     border-top: 3px solid transparent;
+     color:#FFFFFF;
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li a:hover {
+     border-top: 3px solid #EEF4FA;
+}
+ #wrap-header.wrap-header-shrink #main-header #header-logo{
+     background: transparent url(../img/logo_resize.png) no-repeat 0 0;
+	 background-size: 100%;
+     width: 115px;
+     height: 30px;
+     top: 13px;
+     margin-top: 0;
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li a:hover {
+     color: #33789c;
+     background: #FFFFFF;
+}
+ #wrap-header.wrap-header-shrink #main-header .main-navigation li a.activeMenu {
+     color: #33789c;
+     background: #FFFFFF;
+     border-top: 3px solid #EEF4FA;
+}
+
+/*Retina images served up here*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+ #wrap-header #main-header #header-logo {
+	background: transparent url(../img/logo@2x.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+ #wrap-header.wrap-header-shrink #main-header #header-logo{
+     background: transparent url(../img/logo_resize@2x.png) no-repeat 0 0;
+	 background-size: 100%;
+
+}
+}
+/*--*/
