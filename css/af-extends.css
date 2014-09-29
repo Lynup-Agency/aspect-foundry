@@ -1,0 +1,29 @@
+#wrap-header{
+	height: 90px;
+}
+
+.af-logo{
+	margin-top: 5px;
+}
+
+#wrap-header #main-header .main-navigation li{
+	margin-top: 5px;
+}
+
+#wrap-header.wrap-header-shrink{
+	height: 90px;
+}
+
+#wrap-header.wrap-header-shrink #main-header, #wrap-header.wrap-header-shrink #main-header #header-logo, #wrap-header.wrap-header-shrink #main-header .main-navigation li, #wrap-header.wrap-header-shrink #main-header .main-navigation li a{
+	height: 90px;
+	margin-top: 0px;
+	line-height: 25px;
+}
+
+#wrap-header.wrap-header-shrink{
+	backgorund-color: #999;
+}
+
+#wrapper.page h2, .home-block, .home-block .intro, .home-block .intro_opp{
+	text-align: left;
+}
