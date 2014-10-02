@@ -11,7 +11,7 @@ DOCUMENT INFORMATION
 COLORS - change from custom.css
 	- default body text   		#3E4754
 	- header nav bar		   		#FFFFFF
-	- header nav bar minimized	#1fe7ff
+	- header nav bar minimized	#2fa1fd
 	- header nav bar highlight	#FFFFFF + #EEF4FA
 	- sub nav header		   		#CCCCCC
 	
@@ -522,7 +522,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
      display: block;
 }
  .contact-info span strong.highlight {
-     color: #1fe7ff;
+     color: #2fa1fd;
      font-weight: bold;
 }
  .contact-info span.address {
@@ -765,7 +765,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
  #home-intro h1 span {
      font-weight: normal;
-     color: #1fe7ff;
+     color: #2fa1fd;
 }
  #home-about{
 }
@@ -874,7 +874,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-animation: spin 1s linear infinite;
   -moz-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
-  border-top-color: #1fe7ff;
+  border-top-color: #2fa1fd;
 }
 
 @-webkit-keyframes spin {
