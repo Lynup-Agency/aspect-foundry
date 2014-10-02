@@ -27,3 +27,11 @@
 #wrapper.page h2, .home-block, .home-block .intro, .home-block .intro_opp{
 	text-align: left;
 }
+
+#wrap-header #main-header .main-navigation li a:hover, #wrap-header #main-header .main-navigation li a{
+	font-weight: bold;
+}
+
+.subNav span.subNavtitle{
+	color: black;
+}

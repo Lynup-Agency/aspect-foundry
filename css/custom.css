@@ -6,7 +6,7 @@ Colors/background-colors/borders/opacity/logos set using this file.
 COLORS
 	- default body text   		#3E4754
 	- header nav bar		   		#FFFFFF
-	- header nav bar minimized	#33789C
+	- header nav bar minimized	#1fe7ff
 	- header nav bar highlight	#FFFFFF + #EEF4FA
 	- sub nav header		   		#CCCCCC
 	
@@ -17,10 +17,10 @@ COLORS
 	
 
 a:link {
-    color: #33789C;
+    color: #1fe7ff;
 }
 a:visited {
-    color: #33789C;
+    color: #1fe7ff;
 }
 a:hover {
     color: #42ace3;
@@ -48,10 +48,10 @@ a:active {
      color: #4c4c4c;
 }
  #wrap-header #main-header .main-navigation li a:hover {
-     color: #33789c;
+     color: #1fe7ff;
 }
  #wrap-header #main-header .main-navigation li a.activeMenu {
-     color: #33789c;
+     color: #1fe7ff;
 }
  #wrap-header #main-header .main-navigation li.selected a {
      color: #fff;
@@ -72,7 +72,7 @@ a:active {
      color: #fff;
 }
  #wrap-header #main-header .dropdown-menu li a:hover {
-     color: #33789C;
+     color: #1fe7ff;
      background-color: #303030;
      background: #FFFFFF;
 }
@@ -81,7 +81,7 @@ a:active {
      border-right: 0px solid #202020;
 }
  #wrap-header #main-header .dropdown-menu li a:hover > .icon-sprite {
-     color: #33789C;
+     color: #1fe7ff;
 }
  #wrap-header #main-header dropdown-submenu:focus > a {
      background-color: none!important;
@@ -109,17 +109,17 @@ a:active {
 }
  .subNav li a.activeMenu {
      background: #fafafa;
-     border-left: 4px solid #33789C;
+     border-left: 4px solid #1fe7ff;
      color: #4c4c4c;
 }
  .subNav span.subNavtitle {
      background: #CCCCCC;
-     color: #33789C;
+     color: #1fe7ff;
 }
 /*--*/
 /* Transitions and class for reduced height */
  #wrap-header.wrap-header-shrink {
-     background: #33789C;
+     background: #1fe7ff;
      opacity: 0.98;
 }
  #wrap-header.wrap-header-shrink #main-header .main-navigation li a {
@@ -138,11 +138,11 @@ a:active {
      margin-top: 0;
 }
  #wrap-header.wrap-header-shrink #main-header .main-navigation li a:hover {
-     color: #33789c;
+     color: #1fe7ff;
      background: #FFFFFF;
 }
  #wrap-header.wrap-header-shrink #main-header .main-navigation li a.activeMenu {
-     color: #33789c;
+     color: #1fe7ff;
      background: #FFFFFF;
      border-top: 3px solid #EEF4FA;
 }
